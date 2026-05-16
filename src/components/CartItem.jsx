@@ -83,7 +83,7 @@ function CartItem() {
         Checkout
       </button>
 
-      <button>
+      <button onClick={() => window.location.href = '/products'}>
         Continue Shopping
       </button>
     </div>
