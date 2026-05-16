@@ -1,19 +1,25 @@
-function AboutUs() {
+import { useState } from 'react';
+import './App.css';
+import ProductList from './components/ProductList';
+
+function App() {
+  const [showProductList, setShowProductList] = useState(false);
+
   return (
-    <div className="about-us-container">
-      <h1>About Paradise Nursery</h1>
+    <div>
+      {!showProductList ? (
+        <div>
+          <h1>Paradise Nursery</h1>
 
-      <p>
-        Paradise Nursery is an online plant shop that offers beautiful
-        houseplants and gardening products for plant lovers.
-      </p>
-
-      <p>
-        Our mission is to provide affordable and healthy plants while
-        bringing nature closer to every home.
-      </p>
+          <button onClick={() => setShowProductList(true)}>
+            Get Started
+          </button>
+        </div>
+      ) : (
+        <ProductList />
+      )}
     </div>
   );
 }
 
-export default AboutUs;
+export default App;
