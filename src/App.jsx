@@ -1,12 +1,19 @@
-import './App.css';
-
-function App() {
+function AboutUs() {
   return (
-    <div>
-      <h1>Paradise Nursery</h1>
-      <button>Get Started</button>
+    <div className="about-us-container">
+      <h1>About Paradise Nursery</h1>
+
+      <p>
+        Paradise Nursery is an online plant shop that offers beautiful
+        houseplants and gardening products for plant lovers.
+      </p>
+
+      <p>
+        Our mission is to provide affordable and healthy plants while
+        bringing nature closer to every home.
+      </p>
     </div>
   );
 }
 
-export default App;
+export default AboutUs;
